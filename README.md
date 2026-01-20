@@ -12,7 +12,7 @@ To IT Team: Sends a full summary of the request.
 
 To User: Sends an immediate "Acknowledgment Receipt" to improve user experience and reduce "follow-up" inquiries.
 
-Smart CC Logic: Automatically CCs the Security & IT (sit@kowri.app) alias on all outgoing alerts for visibility.
+Smart CC Logic: Automatically CCs the Security & IT (itdeprtmnt@kowri.app) alias on all outgoing alerts for visibility.
 
 🛠️ How It Works
 The script is triggered on every Form Submit event:
