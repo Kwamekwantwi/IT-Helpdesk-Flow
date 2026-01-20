@@ -1,7 +1,8 @@
-IT Request Automation & Ticketing Sync
+**IT Request Automation & Ticketing Sync**
+
 This Google Apps Script automates the bridge between a Google Form and a Ticketing System (YouTrack). It ensures that every IT request is immediately logged as a ticket while simultaneously keeping the user and the IT team informed.
 
-🚀 Key Features
+**🚀 Key Features**
 YouTrack Integration: Automatically forwards form responses to companydomain@youtrack.cloud to create/update support tickets.
 
 Intelligent Name Extraction: Parses the sender's email address to extract a clean, capitalized name (e.g., john.doe@company.com → John doe) for personalized responses.
@@ -14,7 +15,7 @@ To User: Sends an immediate "Acknowledgment Receipt" to improve user experience 
 
 Smart CC Logic: Automatically CCs the Security & IT (itdeprtmnt@kowri.app) alias on all outgoing alerts for visibility.
 
-🛠️ How It Works
+**🛠️ How It Works**
 The script is triggered on every Form Submit event:
 
 It captures the raw values from the Google Form.
@@ -25,7 +26,7 @@ It builds a structured body containing all user inputs.
 
 It dispatches two separate emails using the MailApp service.
 
-📋 Installation
+**📋 Installation**
 Open your Google Sheet linked to the IT Request Form.
 
 Go to Extensions > Apps Script.
@@ -44,12 +45,14 @@ Select On form submit as the event type.
 
 Save and authorize the necessary permissions.
 
-💻 Technical Details
+**💻 Technical Details**
 The script uses JavaScript's regex and string manipulation to ensure the generated name looks professional:
 
 JavaScript
 
 extractedName = rawName.replace(/[._]/g, " "); 
 extractedName = extractedName.charAt(0).toUpperCase() + extractedName.slice(1);
-📄 License
+
+
+**📄 License**
 This project is open-source and available under the MIT License.
