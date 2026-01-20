@@ -1,6 +1,6 @@
 function sendEmailOnFormSubmit(e) {
-  var recipient = "Placeholder email"; 
-  var additionalCC = "sit@kowri.app"; 
+  var recipient = "Placeholder email for youtrack integration"; 
+  var additionalCC = "IT team email"; 
   var subject = "IT Request";
   
   var responses = e.values;
@@ -32,11 +32,11 @@ function sendEmailOnFormSubmit(e) {
   // 2. Send Acknowledgment to the Form Submitter
   var acknowledgmentSubject = "IT Request Acknowledgment";
   var acknowledgmentBody = "Dear " + extractedName + ",\n\n" +
-                           "This is to acknowledge that the Security & IT Team has received your request.\n" +
+                           "This is to acknowledge that the  IT Team has received your request.\n" +
                            "We are currently reviewing the details and will assist you as soon as possible.\n\n" +
                            "Thank you for your patience.\n\n" +
                            "Best Regards,\n" +
-                           "Security & IT Team";
+                           " IT Team";
 
   if (senderEmail) {
     MailApp.sendEmail({
